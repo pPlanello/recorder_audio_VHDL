@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------
+-- Company: University, ETSIT UPM
+-- Engineer: PABLO PLANELLÓ SAN SEGUNDO
+-- 
+-- Create Date: 21.12.2018 21:33:01
+-- Design Name: Recorder_audio_VHDL
+-- Module Name: dsed_audio - Behavioral
+-- Project Name: Recorder_audio
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: It is an entity to record audio and play it in the following options: 
+-- play audio normally, play backward audio, play audio with low pass filter and high 
+-- pass filter.
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
