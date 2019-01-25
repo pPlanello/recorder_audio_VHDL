@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 22 23:51:54 2019
+# Process ID: 3492
+# Current directory: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent996 C:\Users\plane\Documents\ETSIT\DSED\PROYECTO\dsed_audio\dsed_audio.xpr
+# Log file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/vivado.log
+# Journal file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/dsed_audio.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/dsed_audio.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_project

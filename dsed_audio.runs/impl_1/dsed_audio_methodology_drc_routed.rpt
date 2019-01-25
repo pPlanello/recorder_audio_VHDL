@@ -1,0 +1,232 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 19 11:29:12 2019
+| Host         : LAPTOP-5517OUSU running 64-bit major release  (build 9200)
+| Command      : report_methodology -file dsed_audio_methodology_drc_routed.rpt -pb dsed_audio_methodology_drc_routed.pb -rpx dsed_audio_methodology_drc_routed.rpx
+| Design       : dsed_audio
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 39
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 18         |
+| SYNTH-9   | Warning  | Small multiplier             | 12         |
+| TIMING-20 | Warning  | Non-clocked latch            | 9          |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_C/CLR, unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/fin_cycle_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) unit_audio_interface/FSMD_MICRO/fin_cycle_reg_C/CLR, unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__2_i_2 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__0_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__12_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__17_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__1_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__3_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#7 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#8 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_i_2 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#9 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_2_reg[2]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#10 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__0_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#11 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__14_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#12 Warning
+Small multiplier  
+Detected multiplier at unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__6_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC cannot be properly analyzed as its control pin unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+

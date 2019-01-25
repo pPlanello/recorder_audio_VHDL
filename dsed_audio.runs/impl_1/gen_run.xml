@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1547893597">
+  <File Type="BITSTR-BMM" Name="dsed_audio_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="dsed_audio_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dsed_audio.tcl"/>
+  <File Type="OPT-DCP" Name="dsed_audio_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="dsed_audio_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dsed_audio_reports.tcl"/>
+  <File Type="OPT-DRC" Name="dsed_audio_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dsed_audio.hwdef"/>
+  <File Type="PWROPT-DCP" Name="dsed_audio_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="dsed_audio_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dsed_audio_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dsed_audio_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dsed_audio_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dsed_audio_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dsed_audio_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="dsed_audio.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dsed_audio_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="dsed_audio.bin"/>
+  <File Type="PHYSOPT-DCP" Name="dsed_audio_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="dsed_audio.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dsed_audio_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dsed_audio_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dsed_audio_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dsed_audio_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dsed_audio_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="dsed_audio.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="dsed_audio_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="dsed_audio.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dsed_audio_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dsed_audio_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="dsed_audio.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dsed_audio_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dsed_audio_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dsed_audio_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dsed_audio_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dsed_audio_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dsed_audio_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dsed_audio_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="dsed_audio.vdi"/>
+  <File Type="ROUTE-CLK" Name="dsed_audio_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dsed_audio_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dsed_audio_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dsed_audio_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dsed_audio_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dsed_audio_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="dsed_audio.bit"/>
+  <File Type="BITSTR-RBT" Name="dsed_audio.rbt"/>
+  <File Type="BITSTR-NKY" Name="dsed_audio.nky"/>
+  <File Type="BG-DRC" Name="dsed_audio.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/package_dsed.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/package_dsed.vhd"/>
+        <Attr Name="ImportTime" Val="1542799741"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles.vhd"/>
+        <Attr Name="ImportTime" Val="1542360082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd"/>
+        <Attr Name="ImportTime" Val="1542562998"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/pwm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/interfaz_salida_audio/interfaz_salida_audio.srcs/sources_1/new/pwm.vhd"/>
+        <Attr Name="ImportTime" Val="1542798639"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/audio_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/controlador.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/proyecto_controlador/proyecto_controlador.srcs/sources_1/new/controlador.vhd"/>
+        <Attr Name="ImportTime" Val="1543402718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_path.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_filter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/en_4_cycles_tb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1541877511"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone_tb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1542378953"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/pwm_tb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BLOQUE1/interfaz_salida_audio/interfaz_salida_audio.srcs/sources_1/new/pwm_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1542798883"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/audio_interface_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_path_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_filter_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fir_filter_tb_secX_sec05.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fir_filter_tb_sec.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fir_filter_tb_Matlab.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PROYECTO/fir_filter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fir_filter.vhd"/>
+        <Attr Name="ImportTime" Val="1544792088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controller_system_tb_idle.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dsed_audio.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bit_converter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controller_system.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controller_system_tb_delete.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bit_converter_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Telegram Desktop/controller_system_tb_play.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/Telegram Desktop/controller_system_tb_play.vhd"/>
+        <Attr Name="ImportTime" Val="1547545651"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/audio_global_tb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dsed_audio"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LABORATORIO/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LABORATORIO/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1539700622"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_12Mhz"/>
+  <BlockFileSet Type="BlockSrcs" Name="RAM"/>
+</GenRun>

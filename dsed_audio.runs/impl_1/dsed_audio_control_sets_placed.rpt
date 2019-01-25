@@ -1,0 +1,104 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 19 11:28:31 2019
+| Host         : LAPTOP-5517OUSU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dsed_audio_control_sets_placed.rpt
+| Design       : dsed_audio
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    39 |
+| Unused register locations in slices containing registers |   182 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           27 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           19 |
+| No           | No                    | Yes                    |              20 |           10 |
+| No           | Yes                   | No                     |             100 |           24 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              90 |           20 |
+| Yes          | Yes                   | No                     |             306 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|                            Clock Signal                            |                            Enable Signal                           |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_1_n_0         |                                                                    | unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_2_n_0         |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_1_n_0 |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_2_n_0         |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/fin_cycle_reg_LDC_i_1_n_0         |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[4]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_2_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[6]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[2]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[7]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[0]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[3]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/aux_sample_out                     | unit_audio_interface/FSMD_MICRO/aux_sample_out_reg[5]_LDC_i_1_n_0 |                1 |              2 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_fir_filter/unit_control_filter/E[0]                           | reset_IBUF                                                        |                4 |             16 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/data1_1                            | reset_IBUF                                                        |                2 |             16 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_audio_interface/FSMD_MICRO/data2_0                            | reset_IBUF                                                        |                2 |             16 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_controller_system/E[0]                                        | reset_IBUF                                                        |                4 |             20 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | reset_IBUF                                                        |                8 |             22 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_controller_system/count_reg_reg[0][0]                         | reset_IBUF                                                        |                4 |             22 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_controller_system/addr_max_reg_0                              | unit_controller_system/addr_max_reg[18]_i_1_n_0                   |                6 |             38 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_controller_system/addr_RAM_reg[18]_i_1_n_0                    | reset_IBUF                                                        |                5 |             38 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    |                                                                   |               20 |             56 |
+|  unit_clk_12megas/inst/clk_out1                                    |                                                                    | unit_fir_filter/unit_control_filter/reg_3_reg[7]_bret             |                7 |             60 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_controller_system/x4_reg[0][0]                                | reset_IBUF                                                        |               11 |             80 |
+|  unit_clk_12megas/inst/clk_out1                                    | unit_fir_filter/unit_control_filter/reg_2_reg[10]_bret_bret__17[0] | reset_IBUF                                                        |               21 |            134 |
++--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+
+

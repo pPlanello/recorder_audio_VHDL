@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 19:17:26 2019
+# Process ID: 11724
+# Current directory: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11412 C:\Users\plane\Documents\ETSIT\DSED\PROYECTO\dsed_audio\dsed_audio.xpr
+# Log file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/vivado.log
+# Journal file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/dsed_audio.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/dsed_audio.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property used_in_synthesis false [get_files  {{C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/Telegram Desktop/controller_system_tb_play.vhd}}]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top controlador [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/controlador.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/controlador.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pwm_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source pwm_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top audio_interface_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source audio_interface_tb.tcl
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top audio_global_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source audio_global_tb.tcl
+run 3 ms+
+run 3 ms
+restart
+run 3 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top en_4_cycles_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source en_4_cycles_tb.tcl
+run all
+close_sim
+relaunch_sim
+restart
+run 3 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top audio_global_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source audio_global_tb.tcl
+restart
+run 3 ms
+restart
+run 3 ms
+close_sim
+launch_simulation
+source audio_global_tb.tcl
+restart
+run 3 ms
+restart
+run 3 ms
+restart
+run 3 ms
+close_sim
+launch_simulation
+source audio_global_tb.tcl
+restart
+run 3 ms
+relaunch_sim
+restart
+run 3 ms
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/controlador.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/impl_1/controlador.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 25 23:53:20 2019
+# Process ID: 15092
+# Current directory: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9964 C:\Users\plane\Documents\ETSIT\DSED\PROYECTO\dsed_audio\dsed_audio.xpr
+# Log file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/vivado.log
+# Journal file: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.xpr

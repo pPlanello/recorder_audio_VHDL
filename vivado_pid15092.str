@@ -1,0 +1,105 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 15092
+License: Customer
+
+Current time: 	Fri Jan 25 23:53:49 CET 2019
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 125 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	plane
+User home directory: C:/Users/plane
+User working directory: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/plane/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/plane/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/plane/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/vivado.log
+Vivado journal file location: 	C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/vivado.jou
+Engine tmp dir: 	C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/.Xil/Vivado-15092-LAPTOP-5517OUSU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 493 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\plane\Documents\ETSIT\DSED\PROYECTO\dsed_audio\dsed_audio.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 57 MB (+57323kb) [00:00:11]
+// [Engine Memory]: 493 MB (+365562kb) [00:00:11]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 493 MB. GUI used memory: 39 MB. Current time: 1/25/19 11:53:51 PM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 555 MB (+39264kb) [00:00:18]
+// [GUI Memory]: 66 MB (+6659kb) [00:00:20]
+// [Engine Memory]: 585 MB (+2252kb) [00:00:20]
+// Tcl Message: open_project C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 811.172 ; gain = 82.727 
+// Project name: dsed_audio; location: C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// PAPropertyPanels.initPanels (dsed_audio.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dsed_audio(Behavioral) (dsed_audio.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dsed_audio(Behavioral) (dsed_audio.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dsed_audio(Behavioral) (dsed_audio.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 76 MB (+6556kb) [00:00:28]
+selectCodeEditor("dsed_audio.vhd", 601, 314); // ce (w, ck)
+typeControlKey((HResource) null, "dsed_audio.vhd", 'c'); // ce (w, ck)
+// [GUI Memory]: 81 MB (+1655kb) [00:01:14]
+// [GUI Memory]: 87 MB (+1543kb) [00:02:49]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 250ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 92 MB (+983kb) [00:10:10]

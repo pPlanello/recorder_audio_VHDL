@@ -1,0 +1,656 @@
+
+*** Running vivado
+    with args -log dsed_audio.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsed_audio.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dsed_audio.tcl -notrace
+Command: synth_design -top dsed_audio -part xc7a100tcsg324-1 -retiming
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 367.211 ; gain = 100.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsed_audio' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:53]
+INFO: [Synth 8-3491] module 'clk_12Mhz' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5572-LAPTOP-5517OUSU/realtime/clk_12Mhz_stub.vhdl:5' bound to instance 'unit_clk_12megas' of component 'clk_12Mhz' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_12Mhz' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5572-LAPTOP-5517OUSU/realtime/clk_12Mhz_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'audio_interface' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:35' bound to instance 'unit_audio_interface' of component 'audio_interface' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'audio_interface' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:57]
+INFO: [Synth 8-3491] module 'en_4_cycles' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles.vhd:35' bound to instance 'ENA_4_CYCLES' of component 'en_4_cycles' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'en_4_cycles' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'en_4_cycles' (1#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/generador_en_salida_clk_micro/generador_en_salida_clk_micro.srcs/sources_1/new/en_4_cycles.vhd:43]
+INFO: [Synth 8-3491] module 'FSMD_microphone' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd:37' bound to instance 'FSMD_MICRO' of component 'FSMD_microphone' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'FSMD_microphone' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd:46]
+WARNING: [Synth 8-614] signal 'aux_sample_out_next' is read in the process but is not in the sensitivity list [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd:73]
+WARNING: [Synth 8-614] signal 'fin_cycle_next' is read in the process but is not in the sensitivity list [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'FSMD_microphone' (2#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/BLOQUE1/interfaz_microfono/interfaz_microfono.srcs/sources_1/new/FSMD_microphone.vhd:46]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/new/pwm.vhd:37' bound to instance 'PWM_U' of component 'pwm' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/new/pwm.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (3#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/new/pwm.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'audio_interface' (4#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:57]
+INFO: [Synth 8-3491] module 'fir_filter' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/PROYECTO/fir_filter.vhd:36' bound to instance 'unit_fir_filter' of component 'fir_filter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/PROYECTO/fir_filter.vhd:46]
+INFO: [Synth 8-3491] module 'data_path' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:36' bound to instance 'unit_data_path' of component 'data_path' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/PROYECTO/fir_filter.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (5#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:47]
+INFO: [Synth 8-3491] module 'control_filter' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/control_filter.vhd:34' bound to instance 'unit_control_filter' of component 'control_filter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/PROYECTO/fir_filter.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'control_filter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/control_filter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'control_filter' (6#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/control_filter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (7#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/imports/PROYECTO/fir_filter.vhd:46]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5572-LAPTOP-5517OUSU/realtime/RAM_stub.vhdl:5' bound to instance 'unit_RAM' of component 'RAM' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5572-LAPTOP-5517OUSU/realtime/RAM_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'controller_system' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/controller_system.vhd:34' bound to instance 'unit_controller_system' of component 'controller_system' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'controller_system' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/controller_system.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'controller_system' (8#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/controller_system.vhd:58]
+INFO: [Synth 8-3491] module 'bit_converter' declared at 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/bit_converter.vhd:36' bound to instance 'unit_bit_converter' of component 'bit_converter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'bit_converter' [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/bit_converter.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'bit_converter' (9#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/bit_converter.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'dsed_audio' (10#1) [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/dsed_audio.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 422.297 ; gain = 155.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 422.297 ; gain = 155.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 422.297 ; gain = 155.207
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/clk_12Mhz/clk_12Mhz/clk_12Mhz_in_context.xdc] for cell 'unit_clk_12megas'
+Finished Parsing XDC File [c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/clk_12Mhz/clk_12Mhz/clk_12Mhz_in_context.xdc] for cell 'unit_clk_12megas'
+Parsing XDC File [c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'unit_RAM'
+Finished Parsing XDC File [c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'unit_RAM'
+Parsing XDC File [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/constrs_1/imports/LABORATORIO/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/constrs_1/imports/LABORATORIO/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/constrs_1/imports/LABORATORIO/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dsed_audio_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dsed_audio_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 776.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/clk_12Mhz/clk_12Mhz/clk_12Mhz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  c:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/ip/clk_12Mhz/clk_12Mhz/clk_12Mhz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for unit_clk_12megas. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for unit_RAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "aux_cycle_2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "aux_cycle_3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "aux_cycle_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSMD_microphone'
+INFO: [Synth 8-5546] ROM "aux_sample_out_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fin_cycle_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element reg_1_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element out_mult_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:113]
+WARNING: [Synth 8-6014] Unused sequential element reg_2_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:111]
+WARNING: [Synth 8-6014] Unused sequential element reg_2_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:111]
+WARNING: [Synth 8-6014] Unused sequential element out_mult_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element reg_1_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element out_mult_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element reg_1_reg was removed.  [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/data_path.vhd:52]
+INFO: [Synth 8-5544] ROM "sample_out_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.srcs/sources_1/new/controller_system.vhd:115]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'controller_system'
+INFO: [Synth 8-5544] ROM "enable_filter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          state_0_to_105 |                               00 |                               00
+        state_106_to_149 |                               01 |                               01
+        state_150_to_255 |                               10 |                               10
+        state_256_to_299 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSMD_microphone'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+      state_delete_audio |                             0001 |                             0001
+      state_record_audio |                             0010 |                             0010
+    state_record_audio_1 |                             0011 |                             0011
+        state_play_audio |                             0100 |                             0100
+      state_play_audio_1 |                             0101 |                             0101
+      state_play_audio_2 |                             0110 |                             0110
+ state_play_audio_invert |                             0111 |                             0111
+state_play_audio_invert_1 |                             1000 |                             1000
+state_play_audio_invert_2 |                             1001 |                             1001
+ state_play_audio_filter |                             1010 |                             1010
+state_play_audio_filter_1 |                             1011 |                             1011
+state_play_audio_filter_2 |                             1100 |                             1100
+state_play_audio_filter_3 |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'controller_system'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  14 Input     19 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   4 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  39 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  14 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dsed_audio 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module en_4_cycles 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FSMD_microphone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module data_path 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module control_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module controller_system 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  14 Input     19 Bit        Muxes := 2     
+	  39 Input      4 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 8     
+Module bit_converter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "unit_audio_interface/FSMD_MICRO/fin_cycle_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design dsed_audio has port micro_LR driven by constant 0
+WARNING: [Synth 8-3917] design dsed_audio has port jack_sd driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[15]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[15]) is unused and will be removed from module dsed_audio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'unit_clk_12megas/clk_out1' to pin 'unit_clk_12megas/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 776.543 ; gain = 509.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `dsed_audio`
+	Effective logic levels on critical path before retiming is: 7
+	Total number of crtical paths = 32
+
+	Optimizing at the module level
+	Optimizing locally to improve critical paths(may not reduce worst delay)
+
+	Effective logic levels on critical path after retiming is: 5
+	Total number of crtical paths = 87
+	Numbers of forward move = 0, and backward move = 18
+
+	Retimed registers names:
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__0
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__1
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__10
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__11
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__12
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__13
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__14
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__15
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__16
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__18
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__19
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__2
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__20
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__3
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__4
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__5
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__0
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__1
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__10
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__11
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__12
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__13
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__14
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__15
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__16
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__17
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__18
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__2
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__3
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__4
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__5
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__6
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__7
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__8
+		unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__9
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__0
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__1
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__10
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__15
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__16
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__17
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__18
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__2
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__23
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__24
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__3
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__4
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__5
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__6
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__7
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__8
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__9
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__0
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__1
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__10
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__11
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__12
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__13
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__14
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__15
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__16
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__17
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__18
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__19
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__2
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__20
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__3
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__4
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__5
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__6
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__7
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__8
+		unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__9
+ 
+
+INFO: [Synth 8-5816] Retiming module `dsed_audio' done
+
+
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__6) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__7) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__8) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__9) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__17) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[14]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[13]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[12]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[11]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[10]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[9]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[8]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[7]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[6]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[5]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[4]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_2_reg[3]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[14]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[13]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[12]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[11]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[10]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[9]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[8]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[6]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[5]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[4]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[3]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[2]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[1]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[0]) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__11) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__12) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__13) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__14) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__19) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__20) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__21) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__22) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__25) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__26) is unused and will be removed from module dsed_audio.
+WARNING: [Synth 8-3332] Sequential element (unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__27) is unused and will be removed from module dsed_audio.
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__18' (FDRE) to 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__20'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__2' (FDRE) to 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__10'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__6' (FDRE) to 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__11'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__10' (FDRE) to 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__12'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret_bret__14' (FDRE) to 'unit_fir_filter/unit_data_path/reg_2_reg[10]_bret__13'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__13' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__10'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__15' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__9'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__17' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__8'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__19' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__7'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__5' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__18'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__7' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__17'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__9' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__16'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__11' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__15'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__24'
+INFO: [Synth 8-3886] merging instance 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret_bret__1' (FDR) to 'unit_fir_filter/unit_data_path/reg_3_reg[7]_bret__23'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_12Mhz     |         1|
+|2     |RAM           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |RAM_bbox_1       |     1|
+|2     |clk_12Mhz_bbox_0 |     1|
+|3     |CARRY4           |    31|
+|4     |LUT1             |     8|
+|5     |LUT2             |    73|
+|6     |LUT3             |    40|
+|7     |LUT4             |    77|
+|8     |LUT5             |    63|
+|9     |LUT6             |   103|
+|10    |FDCE             |    46|
+|11    |FDPE             |     9|
+|12    |FDRE             |   193|
+|13    |FDSE             |     2|
+|14    |LDC              |     9|
+|15    |IBUF             |     7|
+|16    |OBUF             |     4|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |   675|
+|2     |  unit_audio_interface   |audio_interface   |   193|
+|3     |    ENA_4_CYCLES         |en_4_cycles       |     4|
+|4     |    FSMD_MICRO           |FSMD_microphone   |   147|
+|5     |    PWM_U                |pwm               |    42|
+|6     |  unit_bit_converter     |bit_converter     |    12|
+|7     |  unit_controller_system |controller_system |   158|
+|8     |  unit_fir_filter        |fir_filter        |   291|
+|9     |    unit_control_filter  |control_filter    |    27|
+|10    |    unit_data_path       |data_path         |   264|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 785.523 ; gain = 164.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 785.523 ; gain = 518.434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LDC => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 785.523 ; gain = 529.906
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/plane/Documents/ETSIT/DSED/PROYECTO/dsed_audio/dsed_audio.runs/synth_1/dsed_audio.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dsed_audio_utilization_synth.rpt -pb dsed_audio_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 785.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 19 11:27:19 2019...
